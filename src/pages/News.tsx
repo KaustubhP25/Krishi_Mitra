@@ -115,9 +115,9 @@ const News = () => {
           <CardFooter className="bg-gray-50 border-t p-4">
             <div className="w-full flex justify-between items-center">
               <p className="text-gray-500">{t("newsletter")}</p>
-              <Link to="/home">
+              <a href="/home">
                 <Button variant="outline">{t("goHome")}</Button>
-              </Link>
+              </a>
             </div>
           </CardFooter>
         </Card>

@@ -73,11 +73,11 @@ const Policies = () => {
             </Accordion>
             
             <div className="text-center">
-              <Link to="/home">
+              <a href="/home">
                 <Button variant="outline" className="mr-4">
                   {t("goHome")}
                 </Button>
-              </Link>
+              </a>
               <Button className="bg-green-500 hover:bg-green-600">
                 {t("downloadPolicy")}
               </Button>

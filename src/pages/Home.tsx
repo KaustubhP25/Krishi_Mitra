@@ -37,66 +37,66 @@ const Home = () => {
             <User size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("registerPoor")}</h3>
             <p className="text-gray-600 mb-4">{t("poorDesc")}</p>
-            <Link to="/register-poor" className="mt-auto">
+            <a href="/register-poor" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("register")}
               </Button>
-            </Link>
+            </a>
           </Card>
 
           <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
             <UserPlus size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("register")}</h3>
             <p className="text-gray-600 mb-4">{t("registerDesc")}</p>
-            <Link to="/register" className="mt-auto">
+            <a href="/register" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("register")}
               </Button>
-            </Link>
+            </a>
           </Card>
 
           <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
             <CalIcon size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("calendar")}</h3>
             <p className="text-gray-600 mb-4">{t("calendarDesc")}</p>
-            <Link to="/calendar" className="mt-auto">
+            <a href="/calendar" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("showCalendar")}
               </Button>
-            </Link>
+            </a>
           </Card>
 
           <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
             <FileText size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("policies")}</h3>
             <p className="text-gray-600 mb-4">{t("policiesDesc")}</p>
-            <Link to="/policies" className="mt-auto">
+            <a href="/policies" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("policies")}
               </Button>
-            </Link>
+            </a>
           </Card>
 
           <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
             <Newspaper size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("news")}</h3>
             <p className="text-gray-600 mb-4">{t("newsDesc")}</p>
-            <Link to="/news" className="mt-auto">
+            <a href="/news" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("readNews")}
               </Button>
-            </Link>
+            </a>
           </Card>
 
           <Card className="shadow-md hover:shadow-lg transition-shadow p-6 flex flex-col items-center text-center">
             <Bot size={48} className="text-green-500 mb-4" />
             <h3 className="text-xl font-semibold mb-2">{t("farmingAssistant")}</h3>
             <p className="text-gray-600 mb-4">{t("chatbotDesc") || "Get instant answers about farming and agricultural policies"}</p>
-            <Link to="/chat-assistant" className="mt-auto">
+            <a href="/chat-assistant" className="mt-auto">
               <Button className="bg-green-500 hover:bg-green-600 w-full">
                 {t("chatNow") || "Chat Now"}
               </Button>
-            </Link>
+            </a>
           </Card>
         </section>
       </main>

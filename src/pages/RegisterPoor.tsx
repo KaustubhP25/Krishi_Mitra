@@ -54,11 +54,11 @@ const RegisterPoor = () => {
                 <Input id="familySize" placeholder={t("familySizePlaceholder")} type="number" />
               </div>
               <div className="flex space-x-4 pt-4">
-                <Link to="/home" className="flex-1">
+                <a href="/home" className="flex-1">
                   <Button variant="outline" className="w-full">
                     {t("goHome")}
                   </Button>
-                </Link>
+                </a>
                 <Button className="flex-1 bg-green-500 hover:bg-green-600">
                   {t("submitApplication")}
                 </Button>
