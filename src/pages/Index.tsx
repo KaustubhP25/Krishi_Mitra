@@ -120,11 +120,11 @@ const Index = () => {
               <div className="text-center p-4">
                 <h3 className="text-lg mb-2">{t("createNew")}</h3>
                 <p className="mb-4 text-gray-600">{t("details")}</p>
-                <Link to="/home">
+                <a href="/home">
                   <Button className="bg-green-500 hover:bg-green-600 text-white">
                     {t("continue")}
                   </Button>
-                </Link>
+                </a>
               </div>
             </TabsContent>
           </Tabs>
