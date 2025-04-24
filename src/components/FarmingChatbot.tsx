@@ -40,14 +40,47 @@ const FarmingChatbot = () => {
         "crops": "Common crops in India include rice, wheat, sugarcane, cotton, and various pulses. The choice of crop depends on your region's climate and soil type.",
         "policies": "Key agricultural policies in India include PM-KISAN, Soil Health Card Scheme, and the National Agriculture Market (eNAM). These aim to support farmers through direct income support and better market access.",
         "seasons": "India has three main agricultural seasons: Kharif (monsoon), Rabi (winter), and Zaid (summer). Each season is suitable for different crops.",
-        "default": "I can help you with information about crops, farming seasons, and agricultural policies in India. What would you like to know?"
-      };
+        
+        "whenToSowWheat": "Wheat is typically sown in India during the Rabi season, from late October to December, depending on the region and weather conditions.",
+        "howToImproveSoil": "Use organic matter like compost, apply the correct fertilizers, practice crop rotation, and get your soil tested regularly through the Soil Health Card Scheme.",
+        "whenToHarvestRice": "Rice is usually harvested 3–4 months after sowing. Kharif rice is harvested between October and December.",
+        "howToSaveWater": "Use techniques like drip irrigation, mulching, and scheduling irrigation based on crop needs to conserve water.",
+        "whichFertilizerForPaddy": "Urea, DAP (Di-ammonium Phosphate), and Potash are commonly used for paddy. Use based on soil test recommendations.",
+        "whatIsGreenManure": "Green manure crops are grown and then plowed into the soil to improve its fertility and structure. Examples include dhaincha and sunhemp.",
+        "bestTimeToPlantSugarcane": "Sugarcane is typically planted between February and April (spring season) or September and October (autumn season).",
+        "howToControlWeeds": "Use mulching, hand weeding, or herbicides like Pendimethalin, depending on the crop and stage of growth.",
+        "whatIsDripIrrigation": "Drip irrigation delivers water directly to the roots of plants, reducing wastage and improving water use efficiency.",
+        "whatIsOrganicFarming": "Organic farming avoids synthetic chemicals and focuses on natural inputs, soil health, and ecological balance.",
+        "bestTimeToSowMustard": "Mustard is best sown from mid-October to early November during the Rabi season.",
+        "howToIncreaseYield": "Follow recommended farming practices, use quality seeds, apply the right fertilizers, ensure proper irrigation, and manage pests to increase crop yield.",
+        "howToPreventCropDiseases": "Use certified seeds, rotate crops, monitor your fields regularly, apply recommended fungicides or pesticides only when needed, and maintain good field hygiene.",
+        "whatIsMulching": "Mulching involves covering the soil with organic or synthetic materials to reduce evaporation, prevent weeds, and regulate soil temperature. Materials like straw, leaves, and plastic sheets can be used.",
+        "whatIsZeroTillage": "Zero tillage is a farming technique where crops are planted without disturbing the soil through plowing. This helps retain soil moisture and improves soil health.",  "default": "I can help you with information about crops, farming seasons, and agricultural policies in India. What would you like to know?"
+      }
+      ;
 
       // Simple keyword matching for demo
-      const response = userMessage.toLowerCase().includes("crop") ? demoResponses.crops
-        : userMessage.toLowerCase().includes("policy") || userMessage.toLowerCase().includes("scheme") ? demoResponses.policies
-        : userMessage.toLowerCase().includes("season") ? demoResponses.seasons
-        : demoResponses.default;
+      const lowerMessage = userMessage.toLowerCase();
+
+const response = lowerMessage.includes("crop") ? demoResponses.crops
+    : lowerMessage.includes("policy") || lowerMessage.includes("scheme") ? demoResponses.policies
+    : lowerMessage.includes("season") ? demoResponses.seasons
+    : lowerMessage.includes("wheat") && lowerMessage.includes("sow") ? demoResponses.whenToSowWheat
+    : lowerMessage.includes("mustard") && lowerMessage.includes("sow") ? demoResponses.bestTimeToSowMustard
+    : lowerMessage.includes("yield") ? demoResponses.howToIncreaseYield
+    : lowerMessage.includes("disease") ? demoResponses.howToPreventCropDiseases
+    : lowerMessage.includes("fertilizer") && lowerMessage.includes("paddy") ? demoResponses.whichFertilizerForPaddy
+    : lowerMessage.includes("mulch") ? demoResponses.whatIsMulching
+    : lowerMessage.includes("zero tillage") ? demoResponses.whatIsZeroTillage
+    : lowerMessage.includes("drip irrigation") ? demoResponses.whatIsDripIrrigation
+    : lowerMessage.includes("organic farming") ? demoResponses.whatIsOrganicFarming
+    : lowerMessage.includes("sugarcane") && lowerMessage.includes("plant") ? demoResponses.bestTimeToPlantSugarcane
+    : lowerMessage.includes("weed") || lowerMessage.includes("weeds") ? demoResponses.howToControlWeeds
+    : lowerMessage.includes("green manure") ? demoResponses.whatIsGreenManure
+    : lowerMessage.includes("water") || lowerMessage.includes("irrigation") ? demoResponses.howToSaveWater
+    : lowerMessage.includes("harvest") && lowerMessage.includes("rice") ? demoResponses.whenToHarvestRice
+    : demoResponses.default;
+
 
       setTimeout(() => {
         setMessages((prev) => [

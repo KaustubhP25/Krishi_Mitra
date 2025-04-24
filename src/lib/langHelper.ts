@@ -162,7 +162,7 @@ const dict = {
   },
   en: {
     // Common
-    welcome: "Welcome...",
+    welcome: "Krishi Mitra",
     signIn: "Sign In",
     signUp: "Sign Up",
     password: "Password",
@@ -199,8 +199,8 @@ const dict = {
 
     poorHeading: "Support Program Registration",
     poorSub: "Special registration for eligible individuals",
-    idNumber: "ID Number",
-    idPlaceholder: "Enter National ID Number",
+    idNumber: "Survey Number",
+    idPlaceholder: "Enter National Survey Number",
     address: "Address",
     addressPlaceholder: "Enter your address",
     phone: "Phone Number",
@@ -212,10 +212,10 @@ const dict = {
     submitApplication: "Submit Application",
 
     // Home
-    homeTitle: "SeedHope Connect",
-    homeWelcome: "Welcome to SeedHope Connect",
+    homeTitle: "Krishi Mitra",
+    homeWelcome: "Welcome to Krishi Mitra",
     platformDesc: "Your platform for agricultural support, resource distribution, and community engagement. Use the options below to navigate our services.",
-    registerPoor: "Register for Poor",
+    registerPoor: "PM Kisan Samman Nidhi Yojna",
     poorDesc: "Special registration path for eligible people for additional assistance.",
     register: "Register",
     registerDesc: "Standard registration for farmers and community members.",
@@ -228,7 +228,7 @@ const dict = {
     readNews: "Read News",
     logout: "Logout",
     userWelcome: "Welcome, User",
-    copyright: "&copy; 2025 SeedHope Connect. All rights reserved.",
+    copyright: "&copy; 2025 Krishi Mitra. All rights reserved.",
     // Calendar
     sowingCalendar: "Sowing Calendar",
     bestPractices: "Seasonal sowing guide for optimal crops",
@@ -301,7 +301,7 @@ const dict = {
     disasterReliefDesc: "Guidelines for obtaining assistance in case of crop failure, flood, drought, or other agricultural disasters.",
     // Add missing About Us and Contact Us translations (English)
     aboutUs: "About Us",
-    aboutUsText1: "SeedHope Connect is dedicated to empowering farmers and their communities through accessible information, support, and programs. Our mission is to help you succeed!",
+    aboutUsText1: "Krishi Mitra is dedicated to empowering farmers and their communities through accessible information, support, and programs. Our mission is to help you succeed!",
     aboutUsText2: "We strive to bridge the gap between technology and rural needs, ensuring every user can benefit from our services in their preferred language.",
     contactUs: "Contact Us",
     contactUsText: "For any inquiries, support, or suggestions, contact us at:",

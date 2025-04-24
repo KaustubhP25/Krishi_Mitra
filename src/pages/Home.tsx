@@ -16,7 +16,7 @@ const Home = () => {
             <div className="flex items-center space-x-6">
               <LanguageToggle />
               <span>{t("userWelcome")}</span>
-              <Button variant="outline" className="text-white border-white hover:bg-green-700">
+              <Button variant="outline" className="text-white border-white bg-green-700 hover:bg-green-700">
                 {t("logout")}
               </Button>
             </div>
